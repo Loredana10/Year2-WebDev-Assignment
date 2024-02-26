@@ -48,7 +48,18 @@ The aim of this assignment is to develop a book reservation web site using PHP a
 ## Database
 
 * The book database contains four tables:
-  - Users table - to hold user registration and password details. Each user is uniquely identified by a username.
+1. **Users Table** - to hold user registration and password details. Each user is uniquely identified by a username.
 ![users](https://github.com/Loredana10/Year2-WebDev-Assignment/assets/124152490/55869708-4e83-42ec-98d1-57a7108daf4f)
+2. **Books Table** - holding all book details, indexed by ISBN number.
+![BooksTable](https://github.com/Loredana10/Year2-WebDev-Assignment/assets/124152490/9e60264d-e784-4350-9013-4ca86c6c8099)
+
+3. **Category Table** – indicating the list of book categories (fiction, business, etc.). It is linked to the Books table by category code.
+   ![CategoryTable](https://github.com/Loredana10/Year2-WebDev-Assignment/assets/124152490/e10d1724-d377-4d5b-a7e9-2afb34bb596e)
+
+
+4. **Reserved Books Table** - holding a list of books reserved by the user (identified by username). It is linked to the Books table by ISBN number and the Users table by username.
+   ![reservedTable](https://github.com/Loredana10/Year2-WebDev-Assignment/assets/124152490/daaec644-878e-425b-bae5-ec93f155cdd0)
+
+
 
 
